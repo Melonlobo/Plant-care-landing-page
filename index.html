@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Care Homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" />
+    <style>
+        /* Write styles here */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f3f8;
+            font-family: Allerta, Abel;
+        }
+        
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        #navbarMonstera {
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 4vw;
+            height: 15vh;
+        }
+        
+        #navFirst img {
+            width: 7rem;
+        }
+        
+        #navMid {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        #navMid h4 {
+            position: relative;
+            padding-bottom: 0.1rem;
+            cursor: pointer;
+        }
+        
+        #navMid h4::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #000;
+            transition: width 0.3s ease-in-out;
+        }
+        
+        #navMid h4:hover::after {
+            width: 100%;
+        }
+        
+        #navEnd {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        #navEnd div {
+            width: 2.8rem;
+            height: 2.8rem;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+        #navEnd img {
+            padding: 0.8rem;
+        }
+        
+        #navEnd img:hover {
+            background-color: #a1a7aa;
+            cursor: pointer;
+        }
+        
+        #midWhole {
+            display: flex;
+            padding-left: 5vw;
+            height: 85vh;
+        }
+        
+        #midWholePart1 {
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        
+        #monstera {
+            font-size: 4rem;
+        }
+        
+        #midWholePart121 {
+            display: flex;
+            width: max-content;
+            padding: 0.3rem 2rem;
+            background-color: #466d50;
+            color: #ffffff;
+            border-radius: 100vh;
+            align-items: center;
+        }
+        
+        #midWholePart121 h1,
+        #midWholePart121 img {
+            background-color: #466d50;
+            padding: 0 0.5rem;
+        }
+        
+        #midWholePart121 img svg {
+            background-color: #466d50;
+        }
+        
+        #midWholePart121:hover {
+            background-color: #3e5845;
+            cursor: pointer;
+        }
+        
+        #midWholePart13 {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .midWholePart13Parts {
+            display: flex;
+        }
+        
+        .midWholePart13Parts div:last-child {
+            padding: 0 1rem;
+        }
+        
+        #imgMain {
+            height: 100%;
+        }
+        
+        .text {
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbarMonstera">
+        <div id="navFirst">
+            <img src="./photos/Logo.svg" />
+        </div>
+
+        <div id="navMid">
+            <div>
+                <h4>Home</h4>
+            </div>
+            <div>
+                <h4>Collection</h4>
+            </div>
+            <div>
+                <h4>Shop</h4>
+            </div>
+            <div>
+                <h4>About</h4>
+            </div>
+            <div>
+                <h4>Contact</h4>
+            </div>
+        </div>
+
+        <div id="navEnd">
+            <div>
+                <img src="/photos/cart.svg" />
+            </div>
+            <div>
+                <img src="./photos/user.svg" />
+            </div>
+            <div>
+                <img src="./photos/search.svg" />
+            </div>
+        </div>
+    </nav>
+
+    <div id="midWhole">
+        <div id="midWholePart1">
+            <div id="midWholePart11">
+                <div>
+                    <ul>
+                        <li>
+                            <h1 id="monstera">MONSTERA</h1>
+                        </li>
+                        <li></li>
+                        <li>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis ab veniam adipisci corrupti unde, nostrum saepe.
+                        </li>
+                        <li>
+                            Quibusdam perferendis, dolore est odit iste cum quas quidem officiis laudantium hic maxime recusandae?
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="midWholePart12">
+                <div id="midWholePart121">
+                    <div>
+                        <h1>DISCOVER</h1>
+                    </div>
+                    <div id="midWholePart122">
+                        <img src="./photos/greaterThan.svg" />
+                    </div>
+                </div>
+            </div>
+            <div id="midWholePart13">
+                <div class="midWholePart13Parts">
+                    <div>
+                        <img id="feeding" src="./photos/water plant.png" />
+                    </div>
+                    <div>
+                        <h4>Feeding</h4>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetura dipisicing elit
+                        </p>
+                    </div>
+                </div>
+                <div class="midWholePart13Parts">
+                    <div>
+                        <img id="light" src="./photos/light.svg" alt="" />
+                    </div>
+                    <div>
+                        <h4>Light</h4>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </p>
+                    </div>
+                </div>
+                <div class="midWholePart13Parts">
+                    <div>
+                        <img id="care" src="./photos/plough.svg" />
+                    </div>
+                    <div>
+                        <h4>Care</h4>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img id="imgMain" src="./photos/6_folwer_cut.png" />
+        </div>
+    </div>
+</body>
+
+</html>
